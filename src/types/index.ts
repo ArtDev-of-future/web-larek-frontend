@@ -12,7 +12,7 @@ interface IItemCard {
 	price: number | null;
 }
 
-interface ICart {
+interface IBusket {
 	itemCards: IItemCard[];
 	addItemCard(item: IItemCard): void;
 	removeItemCard(id: string): void;
