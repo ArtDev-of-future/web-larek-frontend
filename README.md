@@ -162,7 +162,8 @@ preview: Строковое или null-значение, представляю
 
 Функции `createElement` и `ensureElement` из модуля `../../utils/utils`.
 Класс `EventEmitter` из модуля `../base/events`.
-Класс `Component` и функция `formatNumber` из модуля `./view`.
+Функция `formatNumber` из модуля `./view`.
+Класс `Component` из модуля `../base/component`;
 Интерфейсы `IBasket` и `ICard` из модуля `../../types`.
 
 ---

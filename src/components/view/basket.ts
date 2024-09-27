@@ -1,7 +1,8 @@
 import { IBasket, ICard } from '../../types';
 import { createElement, ensureElement } from '../../utils/utils';
+import { Component } from '../base/component';
 import { EventEmitter } from '../base/events';
-import { Component, formatNumber } from './view';
+import { formatNumber } from './view';
 export class ViewBasket extends Component<IBasket> {
 	protected list: HTMLElement;
 	protected _total: HTMLElement;

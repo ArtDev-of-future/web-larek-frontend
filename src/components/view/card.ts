@@ -1,5 +1,5 @@
 import { ICard, ICardAction } from '../../types';
-import { Component } from './view';
+import { Component } from '../base/component';
 export class Card extends Component<ICard> {
 	protected _button: HTMLButtonElement;
 	protected _image: HTMLImageElement;

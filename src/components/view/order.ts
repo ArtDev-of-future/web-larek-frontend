@@ -1,7 +1,7 @@
 import { IItemInit } from '../../types';
 import { ensureAllElements } from '../../utils/utils';
 import { IEvents } from '../base/events';
-import { Form } from '../model/form';
+import { Form } from './form';
 export class Order extends Form<IItemInit> {
 	protected paymentButton: HTMLButtonElement[];
 	constructor(container: HTMLFormElement, events: IEvents) {

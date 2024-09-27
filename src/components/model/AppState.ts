@@ -1,16 +1,9 @@
 import { FormErr, IAppState, ICard, IItemInit } from '../../types';
-import { IEvents } from '../base/events';
+import { Model } from '../base/model';
 export type CatalogEvent = {
 	catalog: ICard[];
 };
-abstract class Model<T> {
-	constructor(data: Partial<T>, protected events: IEvents) {
-		Object.assign(this, data);
-	}
-	changes(event: string, loading?: object) {
-		this.events.emit(event, loading ?? {});
-	}
-}
+
 export class AppState extends Model<IAppState> {
 	loading: boolean;
 	catalog: ICard[];
