@@ -1,6 +1,6 @@
-import { IEvents } from '../components/base/events';
-import { IModal } from '../types';
-import { ensureElement } from '../utils/utils';
+import { IModal } from '../../types';
+import { ensureElement } from '../../utils/utils';
+import { IEvents } from '../base/events';
 import { Component } from './view';
 export class Modal extends Component<IModal> {
 	protected _content: HTMLElement;

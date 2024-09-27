@@ -1,7 +1,7 @@
-import { IEvents } from '../components/base/events';
-import { IFormState } from '../types';
-import { ensureElement } from '../utils/utils';
-import { Component } from './view';
+import { IFormState } from '../../types';
+import { ensureElement } from '../../utils/utils';
+import { IEvents } from '../base/events';
+import { Component } from '../view/view';
 export class Form<T> extends Component<IFormState> {
 	protected submit: HTMLButtonElement;
 	protected _errors: HTMLElement;

@@ -1,4 +1,4 @@
-import { ICard, ICardAction } from '../types';
+import { ICard, ICardAction } from '../../types';
 import { Component } from './view';
 export class Card extends Component<ICard> {
 	protected _button: HTMLButtonElement;

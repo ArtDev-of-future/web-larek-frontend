@@ -1,5 +1,5 @@
-import { IEvents } from '../components/base/events';
-import { IView } from '../types';
+import { IView } from '../../types';
+import { IEvents } from '../base/events';
 export function formatNumber(x: number, sep = ' ') {
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, sep);
 }

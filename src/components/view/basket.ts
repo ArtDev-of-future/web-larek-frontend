@@ -1,6 +1,6 @@
-import { EventEmitter } from '../components/base/events';
-import { IBasket, ICard } from '../types';
-import { createElement, ensureElement } from '../utils/utils';
+import { IBasket, ICard } from '../../types';
+import { createElement, ensureElement } from '../../utils/utils';
+import { EventEmitter } from '../base/events';
 import { Component, formatNumber } from './view';
 export class ViewBasket extends Component<IBasket> {
 	protected list: HTMLElement;

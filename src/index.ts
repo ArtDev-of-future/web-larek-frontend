@@ -1,16 +1,16 @@
 import { getData } from '../src/components/base/api';
 import { ICard, IItemInit } from '../src/types/index';
-import { View } from '../src/view/view';
 import { EventEmitter } from './components/base/events';
+import { AppState, CatalogEvent } from './components/model/AppState';
+import { ViewBasket } from './components/view/basket';
+import { Card } from './components/view/card';
+import { Modal } from './components/view/modal';
+import { Order } from './components/view/order';
+import { Success } from './components/view/success';
+import { View } from './components/view/view';
 import './scss/styles.scss';
 import { API_URL, CDN_URL } from './utils/constants';
 import { cloneTemplate, ensureElement } from './utils/utils';
-import { AppState, CatalogEvent } from './view/AppState';
-import { ViewBasket } from './view/basket';
-import { Card } from './view/card';
-import { Modal } from './view/modal';
-import { Order } from './view/order';
-import { Success } from './view/success';
 const events = new EventEmitter();
 
 const getDataApi = new getData(API_URL, CDN_URL);

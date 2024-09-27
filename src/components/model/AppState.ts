@@ -1,5 +1,5 @@
-import { IEvents } from '../components/base/events';
-import { FormErr, IAppState, ICard, IItemInit } from '../types';
+import { FormErr, IAppState, ICard, IItemInit } from '../../types';
+import { IEvents } from '../base/events';
 export type CatalogEvent = {
 	catalog: ICard[];
 };

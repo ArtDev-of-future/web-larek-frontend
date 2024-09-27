@@ -1,5 +1,5 @@
-import { ISuccess, ISuccessActions } from '../types';
-import { ensureElement } from '../utils/utils';
+import { ISuccess, ISuccessActions } from '../../types';
+import { ensureElement } from '../../utils/utils';
 import { Component } from './view';
 export class Success extends Component<ISuccess> {
 	protected _total: HTMLElement;
